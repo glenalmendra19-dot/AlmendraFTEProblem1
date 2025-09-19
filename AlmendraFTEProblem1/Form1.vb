@@ -12,6 +12,7 @@
 
 
 
+
         customerName = txtName.Text.Trim()
         If String.IsNullOrEmpty(customerName) Then
             MessageBox.Show("Please enter the customer's name.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
@@ -22,6 +23,7 @@
 
         If cmbBeverage.SelectedIndex = -1 Then
             MessageBox.Show("Please select a beverage.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+
             Exit Sub
         End If
 
@@ -71,6 +73,7 @@
 
         Dim summary As String = $"Order for {customerName} submitted. Final Total: {finalTotal.ToString("")}"
         MessageBox.Show(summary, "Order Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
     End Sub
 
 

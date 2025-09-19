@@ -30,6 +30,8 @@ Partial Class Form1
         Me.chkDiscount = New System.Windows.Forms.CheckBox()
         Me.lblDiscount = New System.Windows.Forms.Label()
         Me.lblFinalTotal = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.nudQuantity, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,11 +41,10 @@ Partial Class Form1
         Me.txtName.Name = "txtName"
         Me.txtName.Size = New System.Drawing.Size(100, 20)
         Me.txtName.TabIndex = 0
-        Me.txtName.Text = "Customer Name"
         '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(141, 152)
+        Me.btnCalculate.Location = New System.Drawing.Point(273, 154)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(75, 23)
         Me.btnCalculate.TabIndex = 1
@@ -53,15 +54,14 @@ Partial Class Form1
         'cmbBeverage
         '
         Me.cmbBeverage.FormattingEnabled = True
-        Me.cmbBeverage.Location = New System.Drawing.Point(229, 130)
+        Me.cmbBeverage.Location = New System.Drawing.Point(258, 104)
         Me.cmbBeverage.Name = "cmbBeverage"
         Me.cmbBeverage.Size = New System.Drawing.Size(121, 21)
         Me.cmbBeverage.TabIndex = 2
-        Me.cmbBeverage.Text = "Select A Beverage"
         '
         'nudQuantity
         '
-        Me.nudQuantity.Location = New System.Drawing.Point(363, 130)
+        Me.nudQuantity.Location = New System.Drawing.Point(398, 105)
         Me.nudQuantity.Name = "nudQuantity"
         Me.nudQuantity.Size = New System.Drawing.Size(120, 20)
         Me.nudQuantity.TabIndex = 3
@@ -69,7 +69,7 @@ Partial Class Form1
         'lblSubtotal
         '
         Me.lblSubtotal.AutoSize = True
-        Me.lblSubtotal.Location = New System.Drawing.Point(270, 76)
+        Me.lblSubtotal.Location = New System.Drawing.Point(287, 192)
         Me.lblSubtotal.Name = "lblSubtotal"
         Me.lblSubtotal.Size = New System.Drawing.Size(46, 13)
         Me.lblSubtotal.TabIndex = 4
@@ -78,7 +78,7 @@ Partial Class Form1
         'chkDiscount
         '
         Me.chkDiscount.AutoSize = True
-        Me.chkDiscount.Location = New System.Drawing.Point(273, 92)
+        Me.chkDiscount.Location = New System.Drawing.Point(246, 218)
         Me.chkDiscount.Name = "chkDiscount"
         Me.chkDiscount.Size = New System.Drawing.Size(133, 17)
         Me.chkDiscount.TabIndex = 5
@@ -88,7 +88,7 @@ Partial Class Form1
         'lblDiscount
         '
         Me.lblDiscount.AutoSize = True
-        Me.lblDiscount.Location = New System.Drawing.Point(357, 111)
+        Me.lblDiscount.Location = New System.Drawing.Point(287, 251)
         Me.lblDiscount.Name = "lblDiscount"
         Me.lblDiscount.Size = New System.Drawing.Size(49, 13)
         Me.lblDiscount.TabIndex = 6
@@ -97,17 +97,37 @@ Partial Class Form1
         'lblFinalTotal
         '
         Me.lblFinalTotal.AutoSize = True
-        Me.lblFinalTotal.Location = New System.Drawing.Point(411, 76)
+        Me.lblFinalTotal.Location = New System.Drawing.Point(280, 284)
         Me.lblFinalTotal.Name = "lblFinalTotal"
         Me.lblFinalTotal.Size = New System.Drawing.Size(56, 13)
         Me.lblFinalTotal.TabIndex = 7
         Me.lblFinalTotal.Text = "Final Total"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(270, 85)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(96, 13)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "Select A Beverage"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(149, 85)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(82, 13)
+        Me.Label2.TabIndex = 9
+        Me.Label2.Text = "Customer Name"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lblFinalTotal)
         Me.Controls.Add(Me.lblDiscount)
         Me.Controls.Add(Me.chkDiscount)
@@ -132,4 +152,6 @@ Partial Class Form1
     Friend WithEvents chkDiscount As CheckBox
     Friend WithEvents lblDiscount As Label
     Friend WithEvents lblFinalTotal As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class

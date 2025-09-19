@@ -45,9 +45,9 @@ Partial Class Form1
         '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(273, 154)
+        Me.btnCalculate.Location = New System.Drawing.Point(138, 150)
         Me.btnCalculate.Name = "btnCalculate"
-        Me.btnCalculate.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalculate.Size = New System.Drawing.Size(119, 38)
         Me.btnCalculate.TabIndex = 1
         Me.btnCalculate.Text = "Place Order"
         Me.btnCalculate.UseVisualStyleBackColor = True
@@ -70,7 +70,7 @@ Partial Class Form1
         'lblSubtotal
         '
         Me.lblSubtotal.AutoSize = True
-        Me.lblSubtotal.Location = New System.Drawing.Point(287, 192)
+        Me.lblSubtotal.Location = New System.Drawing.Point(135, 204)
         Me.lblSubtotal.Name = "lblSubtotal"
         Me.lblSubtotal.Size = New System.Drawing.Size(46, 13)
         Me.lblSubtotal.TabIndex = 4
@@ -79,7 +79,7 @@ Partial Class Form1
         'chkDiscount
         '
         Me.chkDiscount.AutoSize = True
-        Me.chkDiscount.Location = New System.Drawing.Point(246, 218)
+        Me.chkDiscount.Location = New System.Drawing.Point(211, 194)
         Me.chkDiscount.Name = "chkDiscount"
         Me.chkDiscount.Size = New System.Drawing.Size(133, 17)
         Me.chkDiscount.TabIndex = 5
@@ -89,7 +89,7 @@ Partial Class Form1
         'lblDiscount
         '
         Me.lblDiscount.AutoSize = True
-        Me.lblDiscount.Location = New System.Drawing.Point(287, 251)
+        Me.lblDiscount.Location = New System.Drawing.Point(135, 229)
         Me.lblDiscount.Name = "lblDiscount"
         Me.lblDiscount.Size = New System.Drawing.Size(49, 13)
         Me.lblDiscount.TabIndex = 6
@@ -98,7 +98,7 @@ Partial Class Form1
         'lblFinalTotal
         '
         Me.lblFinalTotal.AutoSize = True
-        Me.lblFinalTotal.Location = New System.Drawing.Point(280, 284)
+        Me.lblFinalTotal.Location = New System.Drawing.Point(135, 260)
         Me.lblFinalTotal.Name = "lblFinalTotal"
         Me.lblFinalTotal.Size = New System.Drawing.Size(56, 13)
         Me.lblFinalTotal.TabIndex = 7
